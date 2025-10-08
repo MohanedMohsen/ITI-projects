@@ -5,14 +5,11 @@
   <title>Day3 Layout</title>
 
   <style>
-    /* نخلي كل الصفحة بخط واحد */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
-
-    /* الهيدر */
     #header {
       width: 100%;
       background: red;
@@ -21,8 +18,6 @@
       padding: 10px;
       font-weight: bold;
     }
-
-    /* العمود الأيسر */
     #linksbar {
       width: 25%;
       background: gray;
@@ -30,8 +25,6 @@
       padding: 10px;
       box-sizing: border-box;
     }
-
-    /* العمود الأيمن */
     #content {
       width: 75%;
       background: pink;
@@ -39,8 +32,6 @@
       padding: 10px;
       box-sizing: border-box;
     }
-
-    /* اللينكات في القائمة */
     ul {
       list-style-type: none;
       padding: 0;
@@ -58,8 +49,6 @@
       color: pink;
       background: red;
     }
-
-    /* الفورم */
     #loginform {
       border: 2px dashed rgb(20,70,60);
       padding: 5px;
@@ -74,23 +63,19 @@
       background: white;
     }
 
-    /* الفقرة بعد h2 */
     #content > h2 + p {
       font-weight: bold;
       font-size: 12px;
     }
 
-    /* فقرة about us */
     #content > p#aboutus { color: yellow; }
     p#aboutus { color: red; }
 
-    /* بعد أي p جوه span يضيف read this */
     span p::after {
       content: " read this";
       color: yellow;
     }
 
-    /* العناوين الصغيرة tabled-bordered */
     .tabled-bordered {
       display: inline-block;
       border: 1px solid black;
@@ -103,12 +88,9 @@
 </head>
 <body>
 
-  <!-- الهيدر -->
   <div id="header">This is the page header</div>
 
-  <!-- العمود الأيسر -->
   <div id="linksbar">
-    <!-- الفورم -->
     <div id="loginform">
       <form>
         User name:<br>
@@ -129,8 +111,6 @@
       <li><a href="#">link5</a></li>
     </ul>
   </div>
-
-  <!-- العمود الأيمن -->
   <div id="content">
     <h2>about us</h2>
     <p>This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph</p>
@@ -144,4 +124,5 @@
 
   <div class="clear"></div>
 </body>
+
 </html>
